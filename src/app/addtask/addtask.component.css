@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   min-height: 70vh;
+}
+
+.registratio {
+  width: 450px;
+  margin-top:5px;
+ 
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  align-self: center;
+  margin-top:5px;
+  margin-left: 15px;
+  width: 90%;
+}

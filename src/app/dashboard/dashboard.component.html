@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="sidebar">
+
+        <div class="logo">
+         <img src="tasks.jpg" alt="" style="height:90px;width:fit-content;">
+        </div>
+
+      <div class="linkss">
+          <ul class="nav flex-column">
+  
+  <li class="nav-item">
+    <a class="nav-link heading" routerLink="/dashboard/addtasks">Add tasks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link heading" routerLink="/dashboard/tasklist">Tasks</a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+    <div class="tasklist">
+        <div class="navsetting">
+           <!-- <div class="data2">Welcome to Tasklist</div> -->
+            <div class="data">Welcome {{data}}</div>
+             <div class="data1"></div>
+           <div class="data1"><button type="button" (click)="logOut()" class="btnn btn btn-link">LogOut</button>
+
+           </div>
+        </div>
+        <div>
+          <router-outlet></router-outlet>
+    </div>
+</div>

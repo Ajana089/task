@@ -1,0 +1,92 @@
+
+.container{
+
+    display:flex;
+    direction: row;
+    flex:1;
+
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color:black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.backimag{
+    flex:1;
+
+}
+.loginform{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color:blue;
+  font-weight: 300;
+  gap:5px;
+ 
+}
+
+.logindiv{
+
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color:blue;
+  font-weight: 300;
+   text-align: center;
+  border: 1px solid blue;
+  margin: 40px;
+  /* margin-bottom: 40px; */
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding-right: 10px; 
+  padding-left: 10px; 
+}
+
+.sign{
+   color:blue;
+   border: none;
+   margin: 0px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+
+.btnclss{
+  background-color: none;
+  border:none;
+  color: blue;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+.error {
+      color: white;
+      font-size: 12px;
+      margin-top: 3px;
+      text-align: left;
+    }
+
+.heading{
+  color: blue;
+}

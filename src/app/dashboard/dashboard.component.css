@@ -1,0 +1,75 @@
+.container{
+    display:flex;
+}
+
+
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:130px;
+    /* border: 1px solid blue; */
+    background-color: cornflowerblue;
+    color:black;
+    min-height: 70vh;
+    /* margin-top: 10px; */
+}
+
+
+
+.linkss{
+    flex: 1;
+    margin-top: 50px;
+}
+.heading{
+    color:black;
+}
+.tasklist{
+    display:flex;
+    flex-direction: column;
+    flex:2;
+}
+
+.navsetting{
+    display:flex;
+    
+    flex-direction: row;
+    background-color: cornflowerblue;
+    height: 90px;
+   
+}
+.data{
+    display: flex;
+    flex:1;
+    color:brown;
+    justify-content:end;
+    margin-top:30px;
+    margin-right: 30px;
+}
+.data1{
+   width:100px;
+    color:red;
+    margin-top: 50px;
+    justify-content: end;
+    background-color: cornflowerblue;
+    border:none;
+}
+.data2{
+     display: flex;
+    flex:1;
+    color:black;
+    justify-content:end;
+    margin-top:30px;
+    margin-left: 50px;
+}
+
+.btnn{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+
+.btnn:hover {
+  color: red;
+}

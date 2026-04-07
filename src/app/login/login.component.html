@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="head">
+        <div>
+            <h2>Task Management</h2>
+        </div>
+        <div class="backimag">
+
+        <img src="tasks.jpg" alt="" >
+
+    </div>
+    </div>
+    <div class="loginform">
+
+    <div class="logindiv">  
+
+        <div class="heading"  *ngIf="flag"><h2>Login</h2></div>
+        <div class="heading" *ngIf="!flag"><h2 >SignUp</h2></div>
+ 
+
+ <form [formGroup]="LoginForm" 
+          (ngSubmit)="flag ? onSubmit() : onRegister()">
+
+
+       
+
+          <div>
+            <mat-form-field>
+           <mat-label>Email</mat-label>
+         <input matInput  formControlName="username" >
+          
+         </mat-form-field>
+          </div>
+<div>
+    <mat-form-field>
+  <mat-label>Password</mat-label>
+  <input matInput  formControlName="password">
+  
+</mat-form-field>
+</div>
+
+ <div>
+    <button mat-raised-button  type="submit"  [disabled]="LoginForm.invalid">
+          {{ flag ? 'Login' : 'Register' }}</button>
+ </div>
+
+  <div *ngIf="loginError" style="color: red;font-size: xx-small;">
+        Username or Password not matching
+      </div>
+
+    </form>
+</div>
+ <div class="sign btnclss">
+  <div *ngIf="flag"> 
+    
+    
+      <button  (click)="changeAction()">Do you want to Sign up?</button>
+    
+    
+  </div> 
+
+  <div *ngIf="!flag">
+ 
+    <div >
+       <button  (click)="changeAction()">Do you want to Login?</button>
+    </div>
+    
+  </div>
+</div>
+</div>  
+</div>
